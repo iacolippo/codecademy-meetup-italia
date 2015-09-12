@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en-US"> 
+
+<head>
+<title>Homepage of codecademymeetupitalia.org</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+
+<!-- importa favicon, foglio di stile e Bootstrap -->
+<link rel="icon" href="img/favicon.png" />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+<!-- importa font Raleway -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+</head>
+
+<body> 
+
+<div id="header">
+    <div class="menu">
+        <div class="row">
+          <ul class="nav nav-tabs nav-justified ">
+          <li role="presentation" class="logo"><a href="index.html"><p><img src="img/logo.png" align="center"></p></a></li>
+          <li role="presentation"><a  href="https://www.codecademy.com/learn" target="blank">Corsi</a></li>
+          <li role="presentation"><a  href="#">Calendario</a></li>
+          <li role="presentation"><a  href="#">Join Us</a></li>
+          <li role="presentation"><a  href="#">Contatti</a></li>
+          <li role="presentation"><a  href="#">Termini</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron">    
+  <h1>Codecademy Meetup Italia</h1>
+  <p>"The most disastrous thing that you can ever learn is your first programming language."</p>
+  <p>Alan Kay</p>  
+</div>
+
+<!-- Sezione About -->
+<div id="about">
+  <div class="row">
+     
+        
+  <div class="col-md-4">
+    <h2>TOGETHER</h2> 
+    <p>I nostri Codecademy Meetup si basano sulla convinzione che il modo migliore per imparare
+    a programmare sia apprendere in gruppo. Sono presenti persone più esperte per aiutare chi è in difficoltà,
+    ma crediamo che la risorsa principale siano i partecipanti. Risolvere un problema assieme ai vicini di posto
+    può essere più gratificante che chiedere aiuto ad uno sviluppatore esperto.</p>
+  </div>
+            
+  <div class="col-md-4">
+    <h2>WE</h2>
+    <p>Partecipare ai Codecademy Meetup significa entrare a far parte di un gruppo di persone con interessi comuni,
+    avere la possibilità di creare una rete di conoscenze nel mondo della programmazione web, ma anche al di fuori.
+    Si entra a far parte di un <em>WE</em> più grande!<br/>
+    Ai Meetup può partecipare chiunque, indipendentemente dal suo livello di conoscenza pregressa, e tutti sono trattati
+    alla pari.</p>
+  </div>
+            
+  <div class="col-md-4">
+    <h2>CODE</h2>
+    <p>Perché imparare a programmare? Perché è importante essere consapevoli di ciò che accade intorno a noi. La consapevolezza
+    nasce dalla conoscenza e la chiave per comprendere come funziona il nostro mondo, sempre più connesso e informatizzato, è
+    capire come pensa una macchina. Imparare le basi di qualche linguaggio di programmazione è l'inizio di una presa di coscienza
+    della nostra realtà. E poi... Programmare è divertente!</p>
+  </div>
+  
+  
+  </div>
+  
+  <!-- testo animato hashtag #TOGETHERWECODE con CSS: va sotto le tre colonne about, sono da sistemare le dimensioni-->
+  <div class="row">
+    <svg>
+
+      <!-- Symbol -->
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+          #TOGETHERWECODE
+        </text>
+      </symbol>  
+
+      <!-- Duplicate symbols -->
+      <use xlink:href="#s-text" class="text"></use>
+      <use xlink:href="#s-text" class="text"></use>
+      <use xlink:href="#s-text" class="text"></use>
+      <use xlink:href="#s-text" class="text"></use>
+      <use xlink:href="#s-text" class="text"></use>
+
+    </svg>
+  </div>
+</div>
+
+<!-- Meetup calendar embedded - modificare un po' di robe, togliere barra in basso, nome in italiano etc.-->
+<div id="calendar">
+  <iframe width="225" height="570" src="http://meetu.ps/2Ndc32" frameborder="0"></iframe>
+</div>
+
+<!-- Piè di pagina -->
+<footer>
+<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Bonvicini Simone, Poli Iacopo, Sottini Lorenzo - 2015
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</body>
+</html>
