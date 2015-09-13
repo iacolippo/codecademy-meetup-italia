@@ -6,11 +6,6 @@ body {
     background-color: #FFFFF
     }
 
-.nav-tabs.nav-justified>li>a {
-    border-bottom: 0px solid #ddd !important;
-    border-radius: 4px 4px 0 0;
-}
-
 .logo img{
 
   height:50%;
@@ -21,45 +16,24 @@ figure h1{
   color:#1E94C5;
 }
 
-.nav-tabs.nav-justified>li>p {
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-
-#header {
+.menu {
     font-family: 'Raleway', serif;
-    font-size: 100%;
+    font-size: 150%;
     background-color: #e5e5e5;
     padding: 5px;
     }
-    
-#header a:link {
-           color:#808b8d;
-           background-color:transparent; 
-           text-decoration:none}
-#header a:visited {
-           color:#808b8d; 
-           background-color:transparent; 
-           text-decoration:none}
-#header a:hover   {
-           color:#808b8d; 
-           background-color:transparent; 
-           text-decoration:underline;
-           }
-#header a:active  {
-           color:#808b8d;
-           background-color:transparent; 
-           text-decoration:none;
-           }
-
-.container {
-    background-color: transparent;
-    max-width:100%;
-    margin: 0 auto;
-    padding: 0 10px;
+           
+footer {
+    text-align: center;
+    font-size: 8px;
+    background-color: #C9E2E6;
+    font-family: 'Raleway', serif;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
     }
-
+    
+/* Home */
     
 .jumbotron {
     height: 800px;
@@ -67,7 +41,7 @@ figure h1{
     }
 
 .jumbotron h1 {
-    font-family: 'Raleway', serif;
+    font-family: 'Comfortaa';
     font-size:500%;
     text-align: center;
     color: black;
@@ -75,9 +49,13 @@ figure h1{
     }
     
 .jumbotron p {
-    font-family: 'Raleway', serif;
+    font-family: 'Comfortaa';
     text-align: center;
     color: black;
+    }
+
+#about  {
+    padding: 10px;
     }
 
 #about h2  {
@@ -95,25 +73,16 @@ figure h1{
     color: black;
     font-size: 75%;
     }
-    
+
 #calendar  {
     text-align: center;
     }
 
-footer {
+/*responsive icons*/
+.icon  {
+    max-width: 100%;
     text-align: center;
-    background-color: #e5e5e5;
-    font-family: 'Raleway', serif;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
     }
-
-@media (min-width: 768px)
-.nav-tabs.nav-justified>li>a {
-    border-bottom: 0px solid #ddd !important;
-    border-radius: 4px 4px 0 0;
-}
 
 /*animated text*/
 svg {
@@ -122,6 +91,11 @@ svg {
   height: 100%;
   text-align: center;
 }
+
+/*responsive animated text? */
+#animated-text  {
+    max-width: 100%;
+    }
 
 /* Main styles */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400);
@@ -177,3 +151,133 @@ svg {
     stroke-dashoffset: -400;
   }
 }
+
+/*About*/
+
+#title  {
+    font-family: 'Comfortaa';
+    text-align: center;
+    font-size: 36px;
+    }
+
+.mission h2  {
+    font-family: 'Comfortaa';
+    text-align: center;
+    }
+
+.mission p  {
+    font-family: 'Raleway';
+    margin-left: 34px;
+    margin-top: 5px;
+    }
+
+.people h2  {
+    font-family: 'Comfortaa';
+    text-align: center;
+    }
+
+.screen:hover .background {
+    opacity:0.5;
+}
+.slider:hover {
+    left:-320px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.header {
+    font-family: 'Raleway';
+    width:100%;
+    height:60px;
+    background:#56B8DE;
+    text-align:center;
+    float:left;
+    color:#fff;
+}
+.profilepic {
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin-top:20px;
+    border:2px solid #fff;
+    box-shadow:0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.slider h3 {
+    font-family: 'Raleway';
+    margin-top:0;
+    text-shadow:0px 1px 3px rgba(0, 0, 0, 0.75);
+}
+.screen {
+    margin:0 auto;
+    margin-top:20px;
+    width:320px;
+    height:200px;
+    box-shadow: 0px 2px 6px #999;
+    position:relative;
+    overflow:hidden;
+    background:#333;
+}
+.slider {
+    width:640px;
+    float:left;
+    left:0;
+    position:relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.header1, .header2 {
+    font-family: 'Raleway';
+    text-align:center;
+    width:320px;
+    float:left;
+    height:140px;
+    color:#fff;
+    position:relative;
+}
+.header2 {
+    padding-top:24px;
+}
+.slider p {
+    font-family:'Raleway';
+    padding: 2px;
+    font-size:12px;
+    text-shadow:0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+    
+.sponsor  {
+    margin: 34px;
+    }
+    
+.sponsor h2  {
+    font-family: 'Comfortaa';
+    text-align: center;
+    }
+    
+.sponsor p {
+    margin-top: 8px;
+    font-family: 'Raleway';
+    }
+    
+.sponsor-image  {
+    text-align: center;
+    }
+    
+.sponsor-image img  {
+    max-width: 100%
+    }
+    
+.meetup-italia  {
+    margin: 34px;
+    }
+
+.meetup-italia h2  {
+    text-align: center;
+    font-family: 'Comfortaa';
+    }
+    
+.meetup-italia p  {
+    margin-top: 5px;
+    font-family: 'Raleway';
+    }
+    

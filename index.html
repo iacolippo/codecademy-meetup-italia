@@ -17,28 +17,29 @@
 
 <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
 
-<!-- importa font Raleway -->
+<!-- importa font -->
 <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 
 <body> 
 
+<!-- fare un menù decente -->
 <div id="header">
     <div class="menu">
         <div class="row">
-          <ul class="nav nav-tabs nav-justified ">
+          <ul>
           <li role="presentation" class="logo"><a href="index.html"><p><img src="img/logo.png" align="center"></p></a></li>
           <li role="presentation"><a  href="https://www.codecademy.com/learn" target="blank">Corsi</a></li>
-          <li role="presentation"><a  href="#">Calendario</a></li>
-          <li role="presentation"><a  href="#">Join Us</a></li>
-          <li role="presentation"><a  href="#">Contatti</a></li>
+          <li role="presentation"><a  href="http://www.meetup.com/it/Codecademy-Brescia-Italy/" target="blank">Eventi</a></li>
+          <li role="presentation"><a  href="about.html">About</a></li>
           <li role="presentation"><a  href="#">Termini</a></li>
           </ul>
         </div>
     </div>
 </div>
 
-<div class="jumbotron">    
+<div class="jumbotron">    <!-- classe slideshow perché slider c'è già -->
   <h1>Codecademy Meetup Italia</h1>
   <p>"The most disastrous thing that you can ever learn is your first programming language."</p>
   <p>Alan Kay</p>  
@@ -47,61 +48,66 @@
 <!-- Sezione About -->
 <div id="about">
   <div class="row">
-     
         
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h2>TOGETHER</h2> 
+    <div class="icon"><img src="img/together.png"/></div>
     <p>I nostri Codecademy Meetup si basano sulla convinzione che il modo migliore per imparare
     a programmare sia apprendere in gruppo. Sono presenti persone più esperte per aiutare chi è in difficoltà,
-    ma crediamo che la risorsa principale siano i partecipanti. Risolvere un problema assieme ai vicini di posto
-    può essere più gratificante che chiedere aiuto ad uno sviluppatore esperto.</p>
+    ma <strong>crediamo che la risorsa principale siano i partecipanti</strong>. Risolvere un problema assieme ai vicini 
+    di posto può essere più gratificante che chiedere aiuto ad uno sviluppatore esperto.</p>
   </div>
             
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h2>WE</h2>
+    <div class="icon"><img src="img/we.png"/></div>
     <p>Partecipare ai Codecademy Meetup significa entrare a far parte di un gruppo di persone con interessi comuni,
     avere la possibilità di creare una rete di conoscenze nel mondo della programmazione web, ma anche al di fuori.
-    Si entra a far parte di un <em>WE</em> più grande!<br/>
+    Si entra a far parte di un <strong>NOI</strong> più grande!<br/>
     Ai Meetup può partecipare chiunque, indipendentemente dal suo livello di conoscenza pregressa, e tutti sono trattati
     alla pari.</p>
   </div>
             
-  <div class="col-md-4">
+  <div class="col-md-3">
     <h2>CODE</h2>
-    <p>Perché imparare a programmare? Perché è importante essere consapevoli di ciò che accade intorno a noi. La consapevolezza
-    nasce dalla conoscenza e la chiave per comprendere come funziona il nostro mondo, sempre più connesso e informatizzato, è
-    capire come pensa una macchina. Imparare le basi di qualche linguaggio di programmazione è l'inizio di una presa di coscienza
-    della nostra realtà. E poi... Programmare è divertente!</p>
+    <div class="icon"><img src="img/code.png"/></div>
+    <p>Perché imparare a programmare? Perché è importante essere consapevoli del mondo intorno a noi. La consapevolezza
+    nasce dalla conoscenza e la chiave per comprendere <strong>come funziona il nostro mondo</strong>, sempre più connesso e informatizzato, è
+    capire come pensa una macchina. Imparare le basi di qualche linguaggio di programmazione significa maggiore coscienza
+    della nostra realtà. E poi... <strong>Programmare è divertente!</strong></p>
   </div>
   
+  <!-- Meetup calendar embedded - modificare un po' di robe, togliere barra in basso, nome in italiano etc.-->
+  <div class="col-md-3">
+    <div id="calendar">
+      <iframe width="225" height="570" src="http://meetu.ps/2Ndc32" frameborder="0"></iframe>
+    </div>   
+  </div>
   
   </div>
   
-  <!-- testo animato hashtag #TOGETHERWECODE con CSS: va sotto le tre colonne about, sono da sistemare le dimensioni-->
+  <!-- sistemare responsiveness-->
   <div class="row">
-    <svg>
+    <div id="animated-text">
+      <svg>
 
-      <!-- Symbol -->
-      <symbol id="s-text">
-        <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-          #TOGETHERWECODE
-        </text>
-      </symbol>  
+        <!-- Symbol -->
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+            #TOGETHERWECODE
+          </text>
+        </symbol>  
 
-      <!-- Duplicate symbols -->
-      <use xlink:href="#s-text" class="text"></use>
-      <use xlink:href="#s-text" class="text"></use>
-      <use xlink:href="#s-text" class="text"></use>
-      <use xlink:href="#s-text" class="text"></use>
-      <use xlink:href="#s-text" class="text"></use>
+        <!-- Duplicate symbols -->
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
 
-    </svg>
+      </svg>
+    </div>
   </div>
-</div>
-
-<!-- Meetup calendar embedded - modificare un po' di robe, togliere barra in basso, nome in italiano etc.-->
-<div id="calendar">
-  <iframe width="225" height="570" src="http://meetu.ps/2Ndc32" frameborder="0"></iframe>
 </div>
 
 <!-- Piè di pagina -->
