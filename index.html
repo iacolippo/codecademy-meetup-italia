@@ -24,31 +24,102 @@
 
 <body> 
 
-<!-- fare un menù decente -->
-<div id="header">
-    <div class="menu">
-        <div class="row">
-          <ul>
-          <li role="presentation" class="logo"><a href="index.html"><p><img src="img/logo.png" align="center"></p></a></li>
-          <li role="presentation"><a  href="https://www.codecademy.com/learn" target="blank">Corsi</a></li>
-          <li role="presentation"><a  href="http://www.meetup.com/it/Codecademy-Brescia-Italy/" target="blank">Eventi</a></li>
-          <li role="presentation"><a  href="about.html">About</a></li>
-          <li role="presentation"><a  href="#">Termini</a></li>
-          </ul>
-        </div>
+<!-- Menu da render decente: HOME CORSI EVENTI ABOUT CREA IL TUO MEETUP TERMINI-->
+<div class="header">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="img/logo.png"/>
     </div>
+    
+    <div class="col-md-8">
+      <h1>Codecademy Meetup Italia</h1>
+      <p>Social Profiles:
+        <a href="https://www.facebook.com/CodecademyMeetupItalia" target="blank">
+          <span class="social">f</span>
+        </a> 
+        <a href="https://twitter.com/CodecadeM_IT_up" target="blank">
+          <span class="social">t</span>
+        </a>
+      </p>
+    </div>
+  </div>
 </div>
 
-<div class="jumbotron">    <!-- classe slideshow perché slider c'è già -->
+<div class="menu">
+  <div class="row navbar">
+    <a href="http://codecademymeetupitalia.org" target="blank">
+      <div class="col-md-2" id="nav">
+        Home
+      </div>
+    </a>
+    
+    <a href="#">
+      <div class="col-md-2" id="nav">
+        About
+      </div>
+    </a> <!-- link alla sezione together we code -->
+    
+    <a href="http://www.meetup.com/it/Codecademy-Brescia-Italy/" target="blank">    
+      <div class="col-md-2" id="nav">      
+        Eventi
+      </div>
+    </a>
+    
+    <a href="https://www.codecademy.com/learn" target="blank">
+      <div class="col-md-2" id="nav">
+        Corsi
+      </div>
+    </a>
+    
+    <a href="#">
+      <div class="col-md-2" id="nav">
+        Contatti
+      </div>
+    </a> <!-- link alla sezione people -->
+    
+    <a href="#"> <!-- link target blank all'informativa -->
+      <div class="col-md-2" id="nav">
+        Termini
+      </div>
+    </a>
+  </div>
+</div>
+
+  <!-- classe slideshow
   <h1>Codecademy Meetup Italia</h1>
   <p>"The most disastrous thing that you can ever learn is your first programming language."</p>
   <p>Alan Kay</p>  
+</div> -->
+
+<div id="slideshow">
+
+  <div class="slide active-slide">
+    <img src="img/panoramica.jpg"/>
+  </div>
+  
+  <div class="slide">
+    <img src="img/panoramica2.jpg"/>
+  </div>
+  
+  <div class="slide">
+    <img src="img/panoramica3.jpg"/>
+  </div>
+
 </div>
 
+<div class="slider-nav">
+  <a href="#slideshow" class="arrow-prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <ul class="slider-dots">
+      <li class="dot active-dot">&bull;</li>
+      <li class="dot">&bull;</li>
+      <li class="dot">&bull;</li>
+    </ul>
+  <a href="#slideshow" class="arrow-next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+</div> 
+
 <!-- Sezione About -->
-<div id="about">
-  <div class="row">
-        
+
+<div class="row about">       
   <div class="col-md-3">
     <h2>TOGETHER</h2> 
     <div class="icon"><img src="img/together.png"/></div>
@@ -78,44 +149,145 @@
   </div>
   
   <!-- Meetup calendar embedded - modificare un po' di robe, togliere barra in basso, nome in italiano etc.-->
-  <div class="col-md-3">
-    <div id="calendar">
+  <div class="col-md-3 calendar">
       <iframe width="225" height="570" src="http://meetu.ps/2Ndc32" frameborder="0"></iframe>
-    </div>   
-  </div>
+  </div>   
+</div>
   
-  </div>
-  
-  <!-- sistemare responsiveness-->
-  <div class="row">
-    <div id="animated-text">
-      <svg>
+<div class="row animated-text">
+  <svg>
 
-        <!-- Symbol -->
-        <symbol id="s-text">
-          <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-            #TOGETHERWECODE
-          </text>
-        </symbol>  
+    <!-- Symbol -->
+    <symbol id="s-text">
+      <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+        #TOGETHERWECODE
+      </text>
+    </symbol>  
 
         <!-- Duplicate symbols -->
-        <use xlink:href="#s-text" class="text"></use>
-        <use xlink:href="#s-text" class="text"></use>
-        <use xlink:href="#s-text" class="text"></use>
-        <use xlink:href="#s-text" class="text"></use>
-        <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
+    <use xlink:href="#s-text" class="text"></use>
 
-      </svg>
+  </svg>
+</div>
+
+<div class="people">
+  <h2>People</h2>
+  <div class="row">
+    
+    <!-- Simone -->
+    <div class="col-md-4">
+      <div class="screen">
+        <div class="header-profile">
+         <h4>Developer</h4>
+        </div>
+        <!-- This slider moves on hover --> 
+        <div class="slider-profile">
+        <!-- Section 1 -->
+          <div class="header1">
+            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <h3>Simone Bonvicini</h3>
+          </div>
+          <!-- Section 2 -->
+          <div class="header2">
+            <p>Studente di Ingegneria Informatica presso UniBS, sviluppatore del team</p>
+            <p>Brescia, IT</p>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    <!-- Iacopo -->
+    <div class="col-md-4">
+      <div class="screen">
+        <div class="header-profile">
+         <h4>Founder</h4>
+        </div>
+        <!-- This slider moves on hover --> 
+        <div class="slider-profile">
+        <!-- Section 1 -->
+          <div class="header1">
+            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <h3>Iacopo Poli</h3>
+          </div>
+          <!-- Section 2 -->
+          <div class="header2">
+            <p>Laureato in Ingegneria Fisica, studente di Fisica dei Sistemi Complessi presso SISSA/ICTP di Trieste</p>
+            <p>Brescia, IT · <a href="http://iacopopoli.me">iacopopoli.me</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Lorenzo -->
+    <div class="col-md-4">
+      <div class="screen">
+        <div class="header-profile">
+         <h4>Designer</h4>
+        </div>
+        <!-- This slider moves on hover --> 
+        <div class="slider-profile">
+        <!-- Section 1 -->
+          <div class="header1">
+            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <h3>Lorenzo Sottini</h3>
+          </div>
+          <!-- Section 2 -->
+          <div class="header2">
+            <p>Diplomato in Design del Prodotto, studente di Web Design presso ITS Machina Lonati</p>
+            <p>Brescia, IT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
   </div>
+</div>
+
+<div class="sponsor">
+  <h2>Main Sponsor & Meetup Host</h2>
+  <div class="row">
+    
+    <div class="col-md-6">
+      <div class="sponsor-image">
+        <a href="http://www.superpartes.biz/" target="blank"><img src="img/superpartes.png"/></a>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+    <p>Un <em>innovation campus</em> dove competenze e passione si incontrano per creare tecnologie radicalmente innovative,
+    nuove opportunità di business e futuri imprenditori.</p>
+    <p><strong>Superpartes Innovation Campus</strong> cresce grazie alla passione e al know-how imprenditoriale di Marino Piotti, 
+    Gianfausto Ferrari, Fulvio Primatesta, Davide Felappi, Luca Salgarelli, Marco Streparava e Francesco Beraldi.</p>
+    <p>Alcuni di questi amici hanno già portato al successo Onion S.p.a., una delle prime aziende italiane ad offrire servizi
+    Internet nei primi anni '90, acquisita da Alten nel 2009.</p>
+    <p>Oggi, il campus può contare su un ampio team di persone appassionate, che include sviluppatori, ingegneri, manager e 
+    analisti finanziari.</p>
+    <p> Tutti lavorano assieme condividendo una mentalità di innovazione aperta: condividere capacità e idee per 
+    realizzare sogni imprenditoriali e contribuire alla crescita tecnologica ed economica del nostro Paese.
+    </p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="meetup-italia">
+  <h2>Vuoi creare un Codecademy Meetup nella tua città?</h2>
+  <p>Chiunque può creare dei Codecademy Meetup, mettiti in contatto con noi e ti aiuteremo a crearne uno nella tua città!</p>
+  <!-- form di contatto, mail a codecademy@superpartes.biz -->
 </div>
 
 <!-- Piè di pagina -->
 <footer>
-<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> Bonvicini Simone, Poli Iacopo, Sottini Lorenzo - 2015
+<p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>Bonvicini Simone, Poli Iacopo, Sottini Lorenzo - 2015</p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
