@@ -62,7 +62,7 @@ body a:visited  {
     background-color: #727272;
     }
 
-.menu {
+#menu {
     font-family: 'Raleway', serif;
     font-size: 1.3em;
     text-align: center;
@@ -131,7 +131,6 @@ footer p  {
 
 .slider-nav {
   text-align: center;
-  margin-top: 20px;
 }
 
 .arrow-prev {
