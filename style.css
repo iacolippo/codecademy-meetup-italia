@@ -16,15 +16,19 @@ body a:visited  {
     text-decoration: none;
     }
 
+.row  {
+    max-width: 100%;
+    }
+
 /**/
 
 /* HEADER - MENU */
 .header  {
     z-index: 5;
-    padding: 1px;
     max-width: 100%;
     font-family: 'Comfortaa', serif;
     text-align: center;
+    margin-bottom: 8px;
     }
     
 .header img  {
@@ -49,17 +53,12 @@ body a:visited  {
     }
     
 .social  {
-    margin: 5px;
-    padding: 10px 15px 10px 15px;
-    width: 50px;
-    height: 50px;
-    color: white;
-    background-color: black;
-    border-radius: 50%;
+    padding: 5px;
+    opacity: 0.6;
     }
     
 .social:hover  {
-    background-color: #727272;
+    opacity: 1;
     }
 
 #menu {
@@ -91,13 +90,14 @@ body a:visited  {
 
 /**/
            
-footer {
+.footer {
     max-width: 100%;
     background-color: #333;
     padding: 5px;
+    margin: 0;
     }
     
-footer p  {
+.footer p  {
     font-family: 'Raleway', serif;
     color: white;
     text-align: center;
@@ -109,7 +109,7 @@ footer p  {
 
 #slideshow {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   max-height: 40%;
 }
 
@@ -133,6 +133,7 @@ footer p  {
 
 .about  {
     padding-top: 10px;
+    max-width: 100%;
     }
     
 .row.about  {
@@ -173,6 +174,11 @@ svg {
   height: 100%;
   text-align: center;
 }
+
+.row.animated-text  {
+    max-width: 100%;
+    margin-top: 50px;
+    }
 
 /* Main styles */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400);
@@ -229,23 +235,33 @@ svg {
   }
 }
 
-/*About*/
+/* Calendar */
+
+.calendar h2  {
+    padding: 20px;
+    font-family: 'Raleway', serif;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    }
+
+.row.calendar{
+  margin:0;
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+#meetup{
+  background-color: #1E94C5;
+  padding-bottom: 0;
+}
+
+/* profili */
 
 #title  {
     font-family: 'Comfortaa';
     text-align: center;
     font-size: 36px;
-    }
-
-.mission h2  {
-    font-family: 'Comfortaa';
-    text-align: center;
-    }
-
-.mission p  {
-    font-family: 'Raleway';
-    margin-left: 34px;
-    margin-top: 5px;
     }
 
 .people h2  {
@@ -334,21 +350,38 @@ svg {
 .sponsor p {
     margin-top: 8px;
     font-family: 'Raleway';
-    }
-    
-.sponsor-image  {
-    text-align: center;
-    }
-    
+    }  
+
+#sponsor {
+  position: relative;
+  max-width: 100%;
+}
+
+.sponsor-image {
+  padding-top: 50px;
+  display: block;
+  max-width: 100%;
+}
+
 .sponsor-image img  {
-    max-width: 100%
+    max-width:100%;
+    }
+
+.sponsor-text  {
+    max-width: 100%;
+    padding: 10px;
+    padding-top: 25px;
+    font-family: 'Raleway', serif;
+    text-align: center;
     }
     
 .meetup-italia  {
     /*background-image: url(img/codemeetup.jpg);*/
     max-width: 100%;
     margin: 0;
-    color: #1E94C5;
+    background-color: #1E94C5;
+    color: #ffffff;
+    padding: 10px;
     }
 
 .meetup-italia h2  {
@@ -366,3 +399,36 @@ svg {
         font-size: 0.8em;
         }
     }
+    
+    
+/* CALENDAR
+    body.framed-mup-widget {
+    padding: 0;
+    margin: 0;
+    width: 600px !important;
+    background-color: transparent;
+}
+
+.mug-badge {
+    font-family: "lucida grande", lucida, tahoma, helvetica, arial, sans-serif !important;
+    font-size: 12px;
+    width: 600px !important;
+}
+
+.mug-badge .mup-widget {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding-top: 8px;
+    width: 600px !important;
+}
+
+.mug-badge .mup-widget .mup-bd {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 8px 6px;
+    margin: 0;
+    width: 600px !important;
+    background: #333;
+} */

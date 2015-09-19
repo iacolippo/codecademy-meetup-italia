@@ -35,11 +35,15 @@
       <p>e-mail: codecademy@superpartes.biz</>
       <p>social:
         <a href="https://www.facebook.com/CodecademyMeetupItalia" target="blank">
-          <span class="social">f</span>
+          <img src="img/facebook.png" class="social"/>
         </a> 
         <a href="https://twitter.com/CodecadeM_IT_up" target="blank">
-          <span class="social">t</span>
+          <img src="img/twitter.png" class="social"/>
         </a>
+        <a href="http://www.meetup.com/it/Codecademy-Brescia-Italy/" target="blank">
+          <img src="img/meetup.png" class="social"/>
+        </a>
+        <!-- add instagram -->
       </p>
     </div>
   </div>
@@ -57,7 +61,7 @@
       <div class="col-md-2" id="nav">
         About
       </div>
-    </a> <!-- link alla sezione together we code -->
+    </a>
     
     <a href="http://www.meetup.com/it/Codecademy-Brescia-Italy/" target="blank">    
       <div class="col-md-2" id="nav">      
@@ -82,6 +86,10 @@
         Termini
       </div>
     </a>
+  </div>
+  
+  <div class=" row navbar-mobile hidden">
+    <img src="img/burger.png"/>
   </div>
 </div>
 
@@ -114,7 +122,7 @@
 <!-- Sezione About -->
 
 <div class="row about" id="about">       
-  <div class="col-md-3">
+  <div class="col-md-4">
     <h2>TOGETHER</h2> 
     <div class="icon"><img src="img/together.png"/></div>
     <p>Ai Codecademy Meetup si impara in gruppo. Ci sono sviluppatori più esperti per aiutare chi è in difficoltà,
@@ -122,7 +130,7 @@
     d'avventura è più gratificante che chiedere aiuto ad un esperto.</p>
   </div>
             
-  <div class="col-md-3">
+  <div class="col-md-4">
     <h2>WE</h2>
     <div class="icon"><img src="img/we.png"/></div>
     <p>Ai Codecademy Meetup si entra a far parte di un gruppo di persone con interessi comuni e si crea una nuova rete 
@@ -130,17 +138,20 @@
     Ai Meetup può partecipare proprio chiunque, dal principiante al drago dell'informatica.</p>
   </div>
             
-  <div class="col-md-3">
+  <div class="col-md-4">
     <h2>CODE</h2>
     <div class="icon"><img src="img/code.png"/></div>
     <p>Perché imparare a programmare? La chiave per comprendere <strong>come funziona il nostro mondo</strong>, sempre più 
     connesso e informatizzato, è capire come pensa una macchina e quindi conoscere la programmazione. 
     E poi... <strong>Programmare è divertente!</strong></p>
-  </div>
-  
-  <!-- Meetup calendar embedded - modificare un po' di robe, togliere barra in basso, nome in italiano etc.-->
-  <div class="col-md-3 calendar">
-      <iframe width="225" height="570" src="http://meetu.ps/2Ndc32" frameborder="0"></iframe>
+  </div> 
+</div>
+
+<div class="row calendar">
+  <div class="col-md-12 calendar" id="meetup">
+     <h2>Il nostro prossimo evento</h2>
+     <center><iframe width="225" height="500" src="http://meetu.ps/2Ndc32" frameborder="0">
+      </iframe></center>
   </div>   
 </div>
   
@@ -178,7 +189,7 @@
         <div class="slider-profile">
         <!-- Section 1 -->
           <div class="header1">
-            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <img class="profilepic" src="img/profilosimone.jpg">
             <h3>Simone Bonvicini</h3>
           </div>
           <!-- Section 2 -->
@@ -200,7 +211,7 @@
         <div class="slider-profile">
         <!-- Section 1 -->
           <div class="header1">
-            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <img class="profilepic" src="img/profiloiacopo.jpg">
             <h3>Iacopo Poli</h3>
           </div>
           <!-- Section 2 -->
@@ -222,13 +233,13 @@
         <div class="slider-profile">
         <!-- Section 1 -->
           <div class="header1">
-            <img class="profilepic" src="https://pbs.twimg.com/profile_images/378800000297360664/96d9e7224ec40be585466172a3785249.png">
+            <img class="profilepic" src="img/profilolorenzo.jpg">
             <h3>Lorenzo Sottini</h3>
           </div>
           <!-- Section 2 -->
           <div class="header2">
             <p>Diplomato in Design del Prodotto, studente di Web Design presso Accademia Santa Giulia</p>
-            <p>Brescia, IT</p>
+            <p>Brescia, IT · <a href="https://www.linkedin.com/pub/lorenzo-sottini/81/229/288">Linkedin</a></p>
           </div>
         </div>
       </div>
@@ -238,43 +249,46 @@
   </div>
 </div>
 
-<div class="sponsor">
-  <h2>Main Sponsor & Meetup Host</h2>
-  <div class="row">
-    
-    <div class="col-md-6">
-      <div class="sponsor-image">
-        <a href="http://www.superpartes.biz/" target="blank"><img src="img/superpartes.png"/></a>
-      </div>
-    </div>
+<div id="sponsor">
+  <div class="sponsor-image">
+    <img src="img/Superpartes.jpg"/>
+  </div>
   
-    <div class="col-md-6">
-    <p>Un <em>innovation campus</em> dove competenze e passione si incontrano per creare tecnologie radicalmente innovative,
-    nuove opportunità di business e futuri imprenditori.</p>
-    <p><strong>Superpartes Innovation Campus</strong> cresce grazie alla passione e al know-how imprenditoriale di Marino Piotti, 
-    Gianfausto Ferrari, Fulvio Primatesta, Davide Felappi, Luca Salgarelli, Marco Streparava e Francesco Beraldi.</p>
-    <p>Alcuni di questi amici hanno già portato al successo Onion S.p.a., una delle prime aziende italiane ad offrire servizi
-    Internet nei primi anni '90, acquisita da Alten nel 2009.</p>
-    <p>Oggi, il campus può contare su un ampio team di persone appassionate, che include sviluppatori, ingegneri, manager e 
-    analisti finanziari.</p>
-    <p> Tutti lavorano assieme condividendo una mentalità di innovazione aperta: condividere capacità e idee per 
-    realizzare sogni imprenditoriali e contribuire alla crescita tecnologica ed economica del nostro Paese.
+  <div class="row sponsor-text">
+    <div class="col-md-10 col-md-offset-1">
+      <p>Un <em>innovation campus</em> dove competenze e passione si incontrano per creare tecnologie radicalmente innovative,
+      nuove opportunità di business e futuri imprenditori.</p>
+      <p><strong><a href="http://www.superpartes.biz/" target="blank">Superpartes Innovation Campus</a></strong> cresce grazie 
+      alla passione e al know-how imprenditoriale di Marino Piotti, Gianfausto Ferrari, Fulvio Primatesta, Davide Felappi, Luca 
+      Salgarelli, Marco Streparava e Francesco Beraldi.</p>
+      <p>Alcuni di questi amici hanno già portato al successo Onion S.p.a., una delle prime aziende italiane ad offrire servizi
+      Internet nei primi anni '90, acquisita da Alten nel 2009.</p>
+      <p>Oggi, il campus può contare su un ampio team di persone appassionate, che include sviluppatori, ingegneri, manager e 
+      analisti finanziari.</p>
+      <p> Tutti lavorano assieme condividendo una mentalità di innovazione aperta: condividere capacità e idee per 
+      realizzare sogni imprenditoriali e contribuire alla crescita tecnologica ed economica del nostro Paese.
     </p>
     </div>
-    
   </div>
 </div>
 
+</div>
+
 <div class="meetup-italia">
-  <h2>Vuoi creare un Codecademy Meetup nella tua città?</h2>
-  <p>Chiunque può creare dei Codecademy Meetup, mettiti in contatto con noi e ti aiuteremo a crearne uno nella tua città!</p>
-  <p>Puoi scriverci all'indirizzo codecademy@superpartes.biz</p>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Vuoi creare un Codecademy Meetup nella tua città?</h2>
+      <p>Chiunque può creare dei Codecademy Meetup, si tratta di trovare una location adatta e formare un gruppo di persone motivate. 
+      Mettiti in contatto con noi e ti aiuteremo a crearne uno nella tua città!</p>
+      <p>Puoi scriverci all'indirizzo codecademy@superpartes.biz</p>
+    </div>
+  </div>
 </div>
 
 <!-- Piè di pagina -->
-<footer>
+<div class="footer">
 <p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>Bonvicini Simone, Poli Iacopo, Sottini Lorenzo - 2015</p>
-</footer>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="script.js"></script>
